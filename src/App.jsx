@@ -7,41 +7,46 @@ import AboutMe from './pages/AboutMe';
 import Cart from './components/Cart';
 import MyOrders from './pages/MyOrders';
 import './App.css';
+import Category from './pages/Category';
+import Favourite from './pages/Favourite';
+import RandomMeal from './pages/RandomMeal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { TiThMenu } from "react-icons/ti";
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const App = () => {
-  const [cartItems, setCartItems] = useState([]);
-  const [orders, setOrders] = useState([]);
-
-  const addToCart = (meal) => {
-    const existingItem = cartItems.find(item => item.idMeal === meal.idMeal);
-    if (existingItem) {
-      setCartItems(cartItems.map(item =>
-        item.idMeal === meal.idMeal ? { ...item, quantity: item.quantity + 1 } : item
-      ));
-    } else {
-      setCartItems([...cartItems, { ...meal, quantity: 1 }]);
-    }
-  };
-
-  const addToOrders = (order) => {
-    setOrders([order, ...orders]);
-  };
+  const [isShow, setShow] = useState(false);
+  const handleShow = () => {
+    setShow(!isShow);
+  }
 
   return (
-    <Router>
-      <div className="app">
-        <Sidebar />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/menu" element={<MenuPage addToCart={addToCart} />} />
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} addToOrders={addToOrders} />} />
-            <Route path="/orders" element={<MyOrders orders={orders} />} />
-          </Routes>
-        </div>
+    <div className="app">
+      <div className='menu-icon' onClick={handleShow}>
+        <TiThMenu className='humIcon' />
       </div>
-    </Router>
+      {/* <Sidebar /> */}
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/category/:category" element={<Category />} />
+          <Route path="/favourites" element={<Favourite />} />
+          <Route path="/randommeal" element={<RandomMeal />} />
+
+        </Routes>
+
+        <Offcanvas show={isShow} onHide={handleShow}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>Meal App</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Sidebar />
+          </Offcanvas.Body>
+        </Offcanvas>
+      </div>
+    </div>
   );
 };
 

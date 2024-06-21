@@ -1,13 +1,26 @@
 /* App.css */
 
 .app-container {
-  display: flex;
+  position: relative;
 }
 
 .main-content {
-  margin-left: 250px; /* Adjust to the width of the sidebar */
-  padding: 20px;
-  width: calc(100% - 250px);
+  width: 100%;
   background: #f4f4f4;
   min-height: 100vh;
+}
+.menu-icon{
+position: absolute;
+left: 1rem;
+top: 1rem;
+z-index: 9;
+cursor: pointer;
+}
+
+.humIcon{
+  font-size: 24px;
+}
+
+.offcanvas-body {
+  padding: 0!important;
 }

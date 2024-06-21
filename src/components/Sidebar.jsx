@@ -7,9 +7,6 @@ import './sidebar.css';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="sidebar-logo">
-        <h1>MealApp</h1>
-      </div>
       <nav className="sidebar-nav">
         <Link to="/" className="sidebar-link">
           <FaHome className="sidebar-icon" />
@@ -19,17 +16,19 @@ const Sidebar = () => {
           <FaUtensils className="sidebar-icon" />
           Menu
         </Link>
+        
+        
+        <Link to="/favourites" className="sidebar-link">
+          <FaClipboardList className="sidebar-icon" />
+          Favourites
+        </Link>
+        <Link to="/randommeal" className="sidebar-link">
+          <FaClipboardList className="sidebar-icon" />
+          Random Meal
+        </Link>
         <Link to="/aboutme" className="sidebar-link">
           <FaInfoCircle className="sidebar-icon" />
           About Me
-        </Link>
-        <Link to="/cart" className="sidebar-link">
-          <FaShoppingCart className="sidebar-icon" />
-          Cart
-        </Link>
-        <Link to="/myorders" className="sidebar-link">
-          <FaClipboardList className="sidebar-icon" />
-          My Orders
         </Link>
       </nav>
     </div>

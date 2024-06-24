@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sushil-pandey-kel/meal-demo/static/css/main.834abe0e.chunk.css",
-    "main.js": "/sushil-pandey-kel/meal-demo/static/js/main.068ecfbf.chunk.js",
-    "main.js.map": "/sushil-pandey-kel/meal-demo/static/js/main.068ecfbf.chunk.js.map",
-    "runtime~main.js": "/sushil-pandey-kel/meal-demo/static/js/runtime~main.4f9694da.js",
-    "runtime~main.js.map": "/sushil-pandey-kel/meal-demo/static/js/runtime~main.4f9694da.js.map",
-    "static/css/2.98036eff.chunk.css": "/sushil-pandey-kel/meal-demo/static/css/2.98036eff.chunk.css",
-    "static/js/2.d809a649.chunk.js": "/sushil-pandey-kel/meal-demo/static/js/2.d809a649.chunk.js",
-    "static/js/2.d809a649.chunk.js.map": "/sushil-pandey-kel/meal-demo/static/js/2.d809a649.chunk.js.map",
-    "index.html": "/sushil-pandey-kel/meal-demo/index.html",
-    "precache-manifest.76eb620050bdf1c8fa42b087a421beb1.js": "/sushil-pandey-kel/meal-demo/precache-manifest.76eb620050bdf1c8fa42b087a421beb1.js",
-    "service-worker.js": "/sushil-pandey-kel/meal-demo/service-worker.js",
-    "static/css/2.98036eff.chunk.css.map": "/sushil-pandey-kel/meal-demo/static/css/2.98036eff.chunk.css.map",
-    "static/css/main.834abe0e.chunk.css.map": "/sushil-pandey-kel/meal-demo/static/css/main.834abe0e.chunk.css.map"
+    "main.css": "%20/meal-demo/static/css/main.834abe0e.chunk.css",
+    "main.js": "%20/meal-demo/static/js/main.068ecfbf.chunk.js",
+    "main.js.map": "%20/meal-demo/static/js/main.068ecfbf.chunk.js.map",
+    "runtime~main.js": "%20/meal-demo/static/js/runtime~main.2023b5ee.js",
+    "runtime~main.js.map": "%20/meal-demo/static/js/runtime~main.2023b5ee.js.map",
+    "static/css/2.98036eff.chunk.css": "%20/meal-demo/static/css/2.98036eff.chunk.css",
+    "static/js/2.d809a649.chunk.js": "%20/meal-demo/static/js/2.d809a649.chunk.js",
+    "static/js/2.d809a649.chunk.js.map": "%20/meal-demo/static/js/2.d809a649.chunk.js.map",
+    "index.html": "%20/meal-demo/index.html",
+    "precache-manifest.251973c742831b30703a81e4a5bfffe8.js": "%20/meal-demo/precache-manifest.251973c742831b30703a81e4a5bfffe8.js",
+    "service-worker.js": "%20/meal-demo/service-worker.js",
+    "static/css/2.98036eff.chunk.css.map": "%20/meal-demo/static/css/2.98036eff.chunk.css.map",
+    "static/css/main.834abe0e.chunk.css.map": "%20/meal-demo/static/css/main.834abe0e.chunk.css.map"
   }
 }
